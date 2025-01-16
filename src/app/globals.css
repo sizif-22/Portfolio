@@ -3,19 +3,125 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --primaryColor: #001010;
+  --secondaryColor:#001515;
+  --thirdColor:#80C080;
+}
+*{
+  color: white;
+  
+}
+::selection {
+  color: var(--primaryColor);
+  background-color: var(--thirdColor);
+}
+.links {
+  font-weight:500;
+}
+.section1 {
+  background: linear-gradient(194deg, #000000 20%, #001010 200%);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* quote-2 */
+@font-face {
+  font-family: "Fustat";
+  src: url('./fonts/Fustat-VariableFont_wght.ttf');
+} 
+/* SiZiF */
+@font-face {
+  font-family: "Italiana";
+  src: url('./fonts/Italiana-Regular.ttf');
+}
+/* quote-1 */
+@font-face {
+  font-family: "Italianno";
+  src: url('./fonts/Italianno-Regular.ttf');
+}
+/* Hi There */
+@font-face {
+  font-family: "JockeyOne";
+  src: url('./fonts/JockeyOne-Regular.ttf');
+}
+/* Sherif Lotfy */
+@font-face {
+  font-family: "Judson";
+  src: url('./fonts/Judson-Regular.ttf');
+}
+
+@keyframes drawLine {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.group:hover .underline-svg line {
+  stroke-dashoffset: 0;
+  animation: drawLine 1.5s ease-in-out forwards;
 }
+
+    /* Line under the photo */
+    .line-bottom {
+      position: absolute;
+      bottom: 10px;
+      left: 50%; /* Start in the middle */
+      width: 0;
+      height: 2px;
+      background: white;
+      transform: translateX(-50%); /* Center the line */
+      animation: expandLine 1.5s infinite alternate ease-in-out;
+    }
+
+    /* Top-left corner lines */
+    .line-top-left-horizontal {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 0;
+      height: 2px;
+      background: white;
+      animation: expandLine1 2s infinite alternate ease-in-out;
+    }
+
+    .line-top-left-vertical {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 2px;
+      height: 0;
+      background: white;
+      animation: expandLineVertical 2s infinite alternate ease-in-out;
+    }
+
+    /* Keyframes for horizontal lines */
+    @keyframes expandLine {
+      from {
+        width: 50px;
+      }
+      to {
+        width: 150px;
+      }
+    }
+    @keyframes expandLine1 {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100px;
+      }
+    }
+
+    /* Keyframes for vertical lines */
+    @keyframes expandLineVertical {
+      from {
+        height: 0;
+      }
+      to {
+        height: 100px;
+      }
+    }
+    #downloadSVG {
+      position: relative;
+    }
