@@ -1,5 +1,5 @@
 {
-    "links":[
+    "Links":[
         {
             "name":"LinkedIN",
             "url":"https://linkedin.com/in/sizif",
@@ -17,7 +17,68 @@
         }
 
     ],
-    "MyImage":"https://firebasestorage.googleapis.com/v0/b/m4-tazkarti.appspot.com/o/my%20images%2Fme.webp?alt=media&token=4190b2f9-0fcb-4269-bdb4-c6eff58c3392",
-    "Resume":"https://raw.githubusercontent.com/sizif-22/sizif-22/c974a825defcc7f46866af580578b5ed6f463d32/Sherif%20Lotfy.pdf"
-
+    "MyPhoto":"https://firebasestorage.googleapis.com/v0/b/m4-tazkarti.appspot.com/o/my%20images%2Fme.webp?alt=media&token=4190b2f9-0fcb-4269-bdb4-c6eff58c3392",
+    "Resume":"https://raw.githubusercontent.com/sizif-22/sizif-22/c974a825defcc7f46866af580578b5ed6f463d32/Sherif%20Lotfy.pdf",
+    "TeckStack":[
+        ["JavaScript","https://img.shields.io/badge/-JavaScript-black?style=for-the-badge&logo=javascript"],
+        ["Java","https://img.shields.io/badge/-Java-007396?style=for-the-badge"],
+        ["C++","https://img.shields.io/badge/-C++-0458a0?style=for-the-badge&logo=cplusplus"],
+        ["TypeScript","https://img.shields.io/badge/-TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"],
+        ["Dart","https://img.shields.io/badge/-Dart-blue?style=for-the-badge&logo=dart"],
+        ["PHP","https://img.shields.io/badge/-PHP-787CB5?style=for-the-badge&logo=PHP&logoColor=black"],
+        ["Python","https://img.shields.io/badge/-Python-ffff47?style=for-the-badge&logo=python"],
+        ["Node.Js","https://img.shields.io/badge/-Node.js-black?style=for-the-badge&logo=node.js"],
+        ["Express.js","https://img.shields.io/badge/-Express.js-black?style=for-the-badge&logo=express&logoColor=white"],
+        ["Next.js","https://img.shields.io/badge/-Next.js-black?style=for-the-badge&logo=nextdotjs&logoColor=white"],
+        ["React.js","https://img.shields.io/badge/-React.js-black?style=for-the-badge&logo=react&logoColor=Crayola"],
+        ["TailWind.css","https://img.shields.io/badge/-Tailwind-1e293b?style=for-the-badge&logo=tailwindcss&logoColor=38bdf8"],
+        ["Flutter","https://img.shields.io/badge/-Flutter-white?style=for-the-badge&logo=flutter&logoColor=blue"],
+        ["MySQL","https://img.shields.io/badge/-MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"],
+        ["MongoDB","https://img.shields.io/badge/-MongoDB-black?style=for-the-badge&logo=mongodb"],
+        ["FireBase","https://img.shields.io/badge/-FireBase-black?style=for-the-badge&logo=firebase&logoColor=yellow"],
+        ["Docker","https://img.shields.io/badge/-Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"],
+        ["Git","https://img.shields.io/badge/-Git-black?style=for-the-badge&logo=git"],
+        ["GitHub","https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github"],
+        ["Redux","https://img.shields.io/badge/-Redux-8b37f7?style=for-the-badge&logo=Redux"],
+        ["Figma","https://img.shields.io/badge/-Figma-black?style=for-the-badge&logo=figma&logoColor=yellow"],
+        ["HTML","https://img.shields.io/badge/-HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"],
+        ["CSS","https://img.shields.io/badge/-CSS3-1572B6?style=for-the-badge&logo=css3"],
+        ["MarkDown","https://img.shields.io/badge/Markdown-black?style=for-the-badge&logo=markdown&logoColor=white"]
+    ],
+    "Quotes":[
+        "The best way to predict the future is to create it.",
+        "الماضي اشبه ب الاتي من الماء بالماء"
+    ],
+    "Projects":[
+        {
+            "name":"Eventy",
+            "shortDescription":"Developed a dynamic event management platform using Next.js and Firebase, enabling organizers to create event pages, design custom forms, track participants, and send scheduled emails via SMTP. Node.js and Express.js power email scheduling, while owners manage accounts and events.",
+            "pmb":["Next.j","Firebase"],
+            "GitHubRepo":"https://github.com/sizif-22/web-events"
+        },
+        {
+            "name":"Orbit",
+            "shortDescription":"Created an interactive 3D solar system orrery, including NEOs, for the NASA Space Apps Cairo 2024 challenge. Collaborated with the Masons team, utilizing Next.js, Three.js, and npm packages to showcase skills in web development, teamwork, and 3D visualization.",
+            "pmb":["Next.js","Three.js"],
+            "GitHubRepo":"https://github.com/TheGrandMasons/orbit"
+        },
+        {
+            "name":"Club DB",
+            "shortDescription":"Developed \"Club DB\" as a university database course project using MySQL. Created Python scripts to generate random data for testing, enabling efficient database functionality and validation.",
+            "pmb":["MySQL","Python"],
+            "GitHubRepo":"https://github.com/sizif-22/C207Proj"
+        },
+        {
+            "name":"Swuber",
+            "shortDescription":"A taxi service system, as a university Java course project. Implemented functionality and designed the GUI using Java Swing.",
+            "pmb":["Java"],
+            "GitHubRepo":"https://github.com/sizif-22/Swuber"
+        },
+        {
+            "name":"Portfolio",
+            "shortDescription":"Built a personal portfolio with Next.js, Framer Motion, and Figma, featuring interactive animations and modern design.",
+            "pmb":["Next.js","Figma"],
+            "GitHubRepo":"https://github.com/sizif-22/Portfolio"
+        }
+    ]
 }

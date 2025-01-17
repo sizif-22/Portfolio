@@ -1,5 +1,5 @@
 "use client";
-import {links} from "../data.json";
+import {Links} from "../data.json";
 import { Linkedin, Github, AtSign } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -27,13 +27,14 @@ const SectionWithUnderline = () => {
       SiZiF
       </p>
       <div className="flex md:gap-4 gap-1 items-center justify-center">
-        {links.map((link, index) => (
+        {Links.map((link, index) => (
           <div key={index} className="flex items-center md:gap-4 gap-1 group">
             {index !== 0 && <span className="text-gray-400 select-none">|</span>}
             <a
               href={link.url}
               target="_blank"
               rel="noopener noreferrer"
+              title={link.name}
               className="flex items-center gap-2 group p-2 rounded-[5px] relative"
             >
               {getIcon(link.icon)}

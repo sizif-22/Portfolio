@@ -12,7 +12,7 @@ const Section1 = () => {
       <div className=" md:absolute left-[10%] px-[10%] md:w-[80%]  md:h-[60vh] top-40 md:px-10 md:grid grid-cols-2">
 
         <MyIMG className={"md:hidden"} />
-        <div className="flex justify-center flex-col gap-[20px] px-[15%] md:px-0 md:h-[100%] h-[50vh] relative">
+        <div className="flex md:justify-center flex-col gap-[20px] px-[15%] md:px-0 md:h-[100%] h-[40vh] relative">
           <motion.p
             className="font-[JockeyOne] text-3xl "
             initial={{ paddingBottom: 20 }}
