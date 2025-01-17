@@ -15,7 +15,7 @@ const ProjectsComponent = () => {
           >
             <h1 className="text-3xl font-[JockeyOne] bt-1">{project.name}.</h1>
             <p className="text-l mb-2">
-              Primarily Made By :{" "}
+              Primarily Made Using :{" "}
               <span className="text-2xl font-[JockeyOne]">
                 {project.pmb[0]}
                 {project.pmb[1] != null && (
