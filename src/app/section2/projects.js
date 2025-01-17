@@ -60,7 +60,7 @@ const ProjectsComponent = () => {
           </div>
         ))}
         <div className="p-2 bg-secondaryColor rounded-[11px] lg:h-[320px] lg:w-[320px] h-[360px] w-[280px] border-2 border-[rgba(255,255,255,0.2)] hover:border-white transition-all flex flex-col justify-center items-center text-center gap-4 px-10 text-[rgba(255,255,255,0.7)]">
-          And Many Other Projects, You Can Finds Them All in My GitHub{" "}
+          And Many Other Projects, You Can Find Them All on My GitHub{" "}
           <a target="_blank" href={GH.GHLink} className="text-white underline">
             {GH.GHUserName}
           </a>{" "}
