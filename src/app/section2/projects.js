@@ -1,5 +1,5 @@
 "use client";
-import { Projects, Quotes } from "../data.json";
+import { Projects, Quotes, GH } from "../data.json";
 const ProjectsComponent = () => {
   return (
     <div className="px-[10%] md:px-[5%] lg:px-[10%] min-h-screen mt-10 py-10  select-none">
@@ -16,7 +16,13 @@ const ProjectsComponent = () => {
             <h1 className="text-3xl font-[JockeyOne] bt-1">{project.name}.</h1>
             <p className="text-l mb-2">
               Primarily Made By :{" "}
-              <span className="text-2xl font-[JockeyOne]">{project.pmb[0]}{project.pmb[1] != null && <span className="font-sans text-[12px]">&</span>}{project.pmb[1]}</span>
+              <span className="text-2xl font-[JockeyOne]">
+                {project.pmb[0]}
+                {project.pmb[1] != null && (
+                  <span className="font-sans text-[12px]">&</span>
+                )}
+                {project.pmb[1]}
+              </span>
             </p>
             <p className="text-[15px] text-[rgba(255,255,255,0.7)]">
               {project.shortDescription}
@@ -55,12 +61,8 @@ const ProjectsComponent = () => {
         ))}
         <div className="p-2 bg-secondaryColor rounded-[11px] lg:h-[320px] lg:w-[320px] h-[360px] w-[280px] border-2 border-[rgba(255,255,255,0.2)] hover:border-white transition-all flex flex-col justify-center items-center text-center gap-4 px-10 text-[rgba(255,255,255,0.7)]">
           And Many Other Projects, You Can Finds Them All in My GitHub{" "}
-          <a
-            target="_blank"
-            href="https://github.com/sizif-22"
-            className="text-white underline"
-          >
-            github.com/sizif-22
+          <a target="_blank" href={GH.GHLink} className="text-white underline">
+            {GH.GHUserName}
           </a>{" "}
           🫡🫡
         </div>
