@@ -18,7 +18,7 @@ const SectionWithUnderline = () => {
   };
 
   return (
-    <motion.div className="absolute left-[10%] top-10 w-[80%] h-[60px] border-[rgba(255,255,255,0.20)] border-2 rounded-[12px] px-10 flex justify-between items-center bg-primaryColor"
+    <motion.div className="absolute left-[10%] top-10 w-[80%] h-[60px] border-[rgba(255,255,255,0.20)] border-2 rounded-[12px] md:px-10 px-3 flex justify-between items-center bg-primaryColor"
       initial={{top:50}}
       animate={{top:40}}
       transition={{duration:0.5 , delay:0.3}}
@@ -26,10 +26,10 @@ const SectionWithUnderline = () => {
       <p  className="text-4xl font-[Italiana] select-none">
       SiZiF
       </p>
-      <div className="flex gap-4 items-center justify-center">
+      <div className="flex md:gap-4 gap-1 items-center justify-center">
         {links.map((link, index) => (
-          <div key={index} className="flex items-center gap-4 group">
-            {index !== 0 && <span className="text-gray-400">|</span>}
+          <div key={index} className="flex items-center md:gap-4 gap-1 group">
+            {index !== 0 && <span className="text-gray-400 select-none">|</span>}
             <a
               href={link.url}
               target="_blank"
@@ -37,7 +37,7 @@ const SectionWithUnderline = () => {
               className="flex items-center gap-2 group p-2 rounded-[5px] relative"
             >
               {getIcon(link.icon)}
-              <span className="group-hover:text-thirdColor links transition-all delay-200">
+              <span className="group-hover:text-thirdColor hidden md:block links transition-all delay-200">
                 {link.name}
               </span>
               <svg

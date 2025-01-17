@@ -9,7 +9,6 @@
 }
 *{
   color: white;
-  
 }
 ::selection {
   color: var(--primaryColor);
@@ -20,6 +19,9 @@
 }
 .section1 {
   background: linear-gradient(194deg, #000000 20%, #001010 200%);
+}
+.section2 {
+  background: linear-gradient(222deg, #000404 0.5%, #001010 200%)
 }
 
 /* quote-2 */
