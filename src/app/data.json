@@ -21,7 +21,7 @@
     "Major":"Software Engineer | Web Developer",
     "MyPhoto":"https://firebasestorage.googleapis.com/v0/b/m4-tazkarti.appspot.com/o/my%20images%2Fme.webp?alt=media&token=4190b2f9-0fcb-4269-bdb4-c6eff58c3392",
     "Resume":"https://raw.githubusercontent.com/sizif-22/sizif-22/c974a825defcc7f46866af580578b5ed6f463d32/Sherif%20Lotfy.pdf",
-    "TeckStack":[
+    "TechStack":[
         ["JavaScript","https://img.shields.io/badge/-JavaScript-black?style=for-the-badge&logo=javascript"],
         ["Java","https://img.shields.io/badge/-Java-007396?style=for-the-badge"],
         ["C++","https://img.shields.io/badge/-C++-0458a0?style=for-the-badge&logo=cplusplus"],
@@ -82,9 +82,5 @@
             "pmb":["Next.js","Figma"],
             "GitHubRepo":"https://github.com/sizif-22/Portfolio"
         }
-    ],
-    "GH":{
-        "GHUserName":"github.com/sizif-22",
-        "GHLink":"https://github.com/sizif-22"
-    }
+    ]
 }

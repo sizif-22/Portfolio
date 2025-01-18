@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { TeckStack, Quotes } from "../data.json";
+import { TechStack, Quotes } from "../data.json";
 const TeckStackComponent = () => {
   return (
     <div className="md:h-[80vh] mt-20 px-[10%] flex flex-col justify-between select-none">
@@ -14,7 +14,7 @@ const TeckStackComponent = () => {
         animate={{ paddingLeft: 0, paddingRight: 0 }}
         transition={{ delay:0.2 ,duration: 0.3 }}
       >
-        {TeckStack.map((teck, index) => (
+        {TechStack.map((teck, index) => (
           <img
             className="inline-block mx-3 my-2 h-8"
             key={index}
