@@ -5,7 +5,7 @@ const TeckStackComponent = () => {
   return (
     <div className="md:h-[80vh] mt-20 px-[10%] flex flex-col justify-between select-none">
       <div>
-        <h1 className="text-3xl">Teck Stack :</h1>
+        <h1 className="text-3xl">Tech Stack :</h1>
       </div>
 
       <motion.div
