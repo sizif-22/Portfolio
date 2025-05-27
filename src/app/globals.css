@@ -235,14 +235,14 @@ body {
 }
 
 .experience-card {
-  animation: ExperienceAppear ease-in-out;
+  animation: ExperienceAppear ease-in;
   animation-timeline: view();
   animation-range: entry 0 cover 20%;
 }
 @keyframes ExperienceAppear {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(50px);
   }
   to {
     opacity: 1;
@@ -250,17 +250,17 @@ body {
   }
 }
 .project-card {
-  animation: ProjectAppear ease-in-out;
+  animation: ProjectAppear ease-in;
   animation-timeline: view();
-  animation-range: entry 0 cover 20%;
+  animation-range: entry 0 cover 15%;
 }
 @keyframes ProjectAppear {
   from {
     opacity: 0;
-    transform: translateX(-20px);
+    transform: scale(0.9);
   }
   to {
     opacity: 1;
-    transform: translateX(0);
+    transform: scale(1);
   }
 }
