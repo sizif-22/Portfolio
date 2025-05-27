@@ -29,17 +29,6 @@ const Projects = () => {
     },
   };
 
-  const slideIn = {
-    initial: { x: -60, opacity: 0 },
-    animate: {
-      x: 0,
-      opacity: 1,
-      transition: {
-        stiffness: 100,
-      },
-    },
-  };
-
   const webbingStoneProjects = [
     {
       name: "WebbingEvents",
@@ -101,10 +90,9 @@ const Projects = () => {
       {projects.map((project, index) => (
         <motion.div
           key={project.name}
-          variants={slideIn}
-          className="bg-black/30 rounded-xl p-6 backdrop-blur-sm border border-white/10 
+          className="project-card bg-black/30 rounded-xl p-6 backdrop-blur-sm border border-white/10 
                    hover:border-[var(--thirdColor)]/50 transition-all duration-300
-                   group hover:-translate-y-1 relative project-card"
+                   group hover:-translate-y-1 relative"
         >
           <h3 className="text-2xl font-semibold text-[var(--thirdColor)] mb-3">
             {project.name}
@@ -160,79 +148,6 @@ const Projects = () => {
       className="bg-[#212121] min-h-[100svh] px-4 md:px-[10%] py-16 noise"
       id="Projects"
     >
-      <style jsx>{`
-        .project-card {
-          animation: cardFloat 6s ease-in-out infinite;
-        }
-
-        .tool-badge {
-          animation: badgePulse 2s ease-in-out infinite;
-        }
-
-        .github-link {
-          animation: buttonGlow 3s ease-in-out infinite;
-        }
-
-        @keyframes cardFloat {
-          0%,
-          100% {
-            transform: translateY(0);
-          }
-          50% {
-            transform: translateY(-10px);
-          }
-        }
-
-        @keyframes badgePulse {
-          0%,
-          100% {
-            opacity: 1;
-            transform: scale(1);
-          }
-          50% {
-            opacity: 0.8;
-            transform: scale(0.95);
-          }
-        }
-
-        @keyframes buttonGlow {
-          0%,
-          100% {
-            box-shadow: 0 0 5px var(--thirdColor);
-          }
-          50% {
-            box-shadow: 0 0 15px var(--thirdColor);
-          }
-        }
-
-        .experience-card {
-          position: relative;
-          overflow: hidden;
-        }
-
-        .experience-card::before {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: -100%;
-          width: 100%;
-          height: 100%;
-          background: linear-gradient(
-            90deg,
-            transparent,
-            rgba(var(--thirdColor), 0.1),
-            transparent
-          );
-          animation: shimmer 3s infinite;
-        }
-
-        @keyframes shimmer {
-          100% {
-            left: 100%;
-          }
-        }
-      `}</style>
-
       <motion.div
         initial="initial"
         whileInView="animate"
@@ -242,7 +157,7 @@ const Projects = () => {
         {/* Header */}
         <motion.div variants={fadeInUp}>
           <div className="flex items-center gap-3 mb-8">
-            <FaBriefcase className="text-[var(--thirdColor)] text-3xl animate-bounce" />
+            <FaBriefcase className="text-[var(--thirdColor)] text-3xl" />
             <h2 className="text-3xl md:text-4xl font-bold gradient-text">
               Professional Experience & Projects
             </h2>
@@ -250,7 +165,7 @@ const Projects = () => {
         </motion.div>
 
         {/* WebbingStone Experience & Projects */}
-        <motion.div variants={fadeInUp} className="space-y-8">
+        <motion.div variants={fadeInUp} className="space-y-8 experience-card">
           <div className="experience-card bg-black/30 rounded-xl p-8 backdrop-blur-sm border border-white/10 hover:border-[var(--thirdColor)]/50 transition-colors">
             <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
               <h3 className="text-2xl font-semibold text-[var(--thirdColor)]">
@@ -274,7 +189,7 @@ const Projects = () => {
         <hr />
 
         {/* Masons Experience & Projects */}
-        <motion.div variants={fadeInUp} className="space-y-8">
+        <motion.div variants={fadeInUp} className="space-y-8 experience-card">
           <div className="experience-card bg-black/30 rounded-xl p-8 backdrop-blur-sm border border-white/10 hover:border-[var(--thirdColor)]/50 transition-colors">
             <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
               <h3 className="text-2xl font-semibold text-[var(--thirdColor)]">
