@@ -35,8 +35,6 @@ const Projects = () => {
       x: 0,
       opacity: 1,
       transition: {
-        type: "spring",
-        damping: 15,
         stiffness: 100,
       },
     },

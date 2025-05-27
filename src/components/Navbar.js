@@ -47,13 +47,13 @@ const Navbar = () => {
       <div className="px-4 sm:px-6 lg:px-8 font-[Italiana] text-4xl select-none">SiZiF</div>
       <div className="px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-center h-16">
-          <div className="flex space-x-8">
+          <div className="flex gap-4 justify-center">
             {navItems.map((item) => (
               <a
                 key={item.id}
                 href={`#${item.id}`}
                 onClick={(e) => scrollToSection(e, item.id)}
-                className="text-white hover:text-[var(--thirdColor)] px-3 py-2 text-sm font-medium 
+                className="text-white hover:text-[var(--thirdColor)] md:px-3 py-2 text-sm font-medium 
                          transition-colors duration-300 relative group"
               >
                 {item.label}
