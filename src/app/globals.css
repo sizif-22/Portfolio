@@ -15,7 +15,7 @@ p {
   color: rgba(255, 255, 255, 0.9);
   letter-spacing: 0.015em;
   font-weight: 400;
-  margin-bottom: 1.5rem;
+  margin: 1.5rem 0;
 }
 
 /* Add a subtle text gradient effect for headings */
@@ -25,7 +25,6 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
-  margin-bottom: 1.5rem;
 }
 
 
