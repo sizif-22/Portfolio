@@ -8,6 +8,119 @@
   --thirdColor:#80C080;
 }
 
+/* Enhance paragraph styling */
+p {
+  font-size: 1.125rem;
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.9);
+  letter-spacing: 0.015em;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+/* Add a subtle text gradient effect for headings */
+h1, h2, h3, h4, h5, h6 {
+  background: linear-gradient(120deg, #ffffff 0%, #e0e0e0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin-bottom: 1.5rem;
+}
+
+/* Add a subtle hover effect for paragraphs */
+p:hover {
+  transform: translateX(4px);
+  transition: transform 0.3s ease;
+}
+
+/* Add text selection styling */
+::selection {
+  background: rgba(128, 192, 128, 0.3);
+  color: white;
+}
+
+/* Add smooth scrolling */
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #212121;
+  font-feature-settings: "liga" 1, "kern" 1;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Add noise texture */
+.noise {
+  background-color: #212121;
+  background-image: url(/texture-dark.png);
+  background-repeat: repeat;
+}
+
+/* Add a subtle text shadow for better readability */
+.text-shadow {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Add a gradient text effect for important paragraphs */
+.gradient-text {
+  background: linear-gradient(45deg, var(--thirdColor) 0%, #4CAF50 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+/* Add a highlight effect for important text */
+.highlight {
+  position: relative;
+  display: inline-block;
+}
+
+.highlight::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.2em;
+  background-color: var(--thirdColor);
+  opacity: 0.3;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.highlight:hover::after {
+  transform: scaleX(1);
+}
+
+/* Add a fade-in animation for text */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* Add line height and spacing for better readability */
+.readable {
+  max-width: 70ch;
+  line-height: 1.8;
+  letter-spacing: 0.01em;
+}
+
 /* quote-2 */
 @font-face {
   font-family: "Fustat";
@@ -35,11 +148,6 @@
 }
 *{
   color: white;
-  scroll-behavior: smooth;
-}
-::selection {
-  color: var(--primaryColor);
-  background-color: white;
 }
 
 @keyframes drawLine {
@@ -59,9 +167,7 @@
 .links {
   font-weight:500;
 }
-body {
-  background: linear-gradient(203deg, #000000 5%, #001010 90%);
-}
+
 .group:hover .underline-svg line {
   stroke-dashoffset: 0;
   animation: drawLine 1.5s ease-in-out forwards;
