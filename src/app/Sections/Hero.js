@@ -3,7 +3,6 @@ import GitHubCalendar from "react-github-calendar";
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import Image from "next/image";
 
 const Hero = () => {
   const socialButtons = [
@@ -28,7 +27,7 @@ const Hero = () => {
   ];
 
   return (
-    <section className="h-[100svh] noise relative overflow-hidden pt-[10vh]" id="Home">
+    <section className="h-[100svh] bg-[#212121] noise relative overflow-hidden pt-[10vh]" id="Home">
       {/* Animated background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-black/20 to-transparent z-0" />
 

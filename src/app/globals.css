@@ -28,11 +28,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1.5rem;
 }
 
-/* Add a subtle hover effect for paragraphs */
-p:hover {
-  transform: translateX(4px);
-  transition: transform 0.3s ease;
-}
 
 /* Add text selection styling */
 ::selection {
@@ -46,7 +41,7 @@ p:hover {
 }
 
 body {
-  background: #212121;
+  /* background: #212121; */
   font-feature-settings: "liga" 1, "kern" 1;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -55,8 +50,11 @@ body {
 
 /* Add noise texture */
 .noise {
-  background-color: #212121;
   background-image: url(/texture-dark.png);
+  background-repeat: repeat;
+}
+.noise2 {
+  background-image: url(/binding-dark.png);
   background-repeat: repeat;
 }
 
