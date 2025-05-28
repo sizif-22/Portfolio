@@ -77,7 +77,7 @@ body {
   display: inline-block;
 }
 
-.highlight::after {
+/* .highlight::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -93,7 +93,7 @@ body {
 
 .highlight:hover::after {
   transform: scaleX(1);
-}
+} */
 
 /* Add a fade-in animation for text */
 @keyframes fadeIn {

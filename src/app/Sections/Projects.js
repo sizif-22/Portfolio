@@ -92,7 +92,7 @@ const Projects = () => {
           key={project.name}
           className="project-card bg-black/30 rounded-xl p-6 backdrop-blur-sm border border-white/10 
                    hover:border-[var(--thirdColor)]/50 transition-all duration-300
-                   group hover:-translate-y-1 relative"
+                   group hover:border-white/30  relative"
         >
           <h3 className="text-2xl font-semibold text-[var(--thirdColor)] mb-3">
             {project.name}
@@ -106,7 +106,7 @@ const Projects = () => {
                 key={tool}
                 className="flex items-center gap-2 px-3 py-1 bg-white/5 rounded-full text-sm
                          border border-white/10 group-hover:border-[var(--thirdColor)]/30
-                         tool-badge"
+                         tool-badge select-none"
               >
                 {tool === "Next.js" && <SiNextdotjs className="text-white" />}
                 {tool === "Firebase" && (
